@@ -98,16 +98,16 @@ fun HomeScreen(navController: NavController, viewModel: HomeViewModel = hiltView
                     ExpenseTextView(
                         text = "Good Afternoon",
                         style = Typography.titleLarge,
-                        color = Color.Black
+                        color = Color.White
                     )
                     ExpenseTextView(
                         text = "Yashwanth",
                         style = Typography.titleLarge,
-                        color = Color.Black
+                        color = Color.White
                     )
                 }
                 Image(
-                    painter = painterResource(id = R.drawable.ic_notification),
+                    painter = painterResource(id = R.drawable.ic_notification_white),
                     contentDescription = null,
                     modifier = Modifier.align(Alignment.CenterEnd)
                 )
@@ -184,14 +184,14 @@ fun MultiFloatingActionButton(
                     ) {
                         Column(horizontalAlignment = Alignment.CenterHorizontally) {
                             Icon(
-                                painter = painterResource(R.drawable.ic_income),
+                                painter = painterResource(R.drawable.ic_income_white),
                                 contentDescription = "Add Income",
-                                tint = Color.Black
+                                tint = Color.White
                             )
                             Text(
                                 text = "Income",
                                 style = Typography.bodyMedium,
-                                color = Color.Black
+                                color = Color.White
                             )
                         }
                     }
@@ -207,14 +207,14 @@ fun MultiFloatingActionButton(
                     ) {
                         Column(horizontalAlignment = Alignment.CenterHorizontally) {
                             Icon(
-                                painter = painterResource(R.drawable.ic_expense),
+                                painter = painterResource(R.drawable.ic_expense_white),
                                 contentDescription = "Add Income",
-                                tint = Color.Black
+                                tint = Color.White
                             )
                             Text(
                                 text = "Income",
                                 style = Typography.bodyMedium,
-                                color = Color.Black
+                                color = Color.White
                             )
                         }
                     }
@@ -272,7 +272,7 @@ fun CardItem(
                 )
             }
             Image(
-                painter = painterResource(id = R.drawable.dots_menu),
+                painter = painterResource(id = R.drawable.dots_menu_white),
                 contentDescription = null,
                 modifier = Modifier.align(Alignment.CenterEnd)
             )
@@ -288,7 +288,7 @@ fun CardItem(
                     .align(Alignment.CenterStart),
                 title = "Income",
                 amount = income,
-                imaget = R.drawable.ic_income
+                imaget = R.drawable.ic_income_white
             )
             Spacer(modifier = Modifier.size(8.dp))
             CardRowItem(
@@ -296,7 +296,7 @@ fun CardItem(
                     .align(Alignment.CenterEnd),
                 title = "Expense",
                 amount = expense,
-                imaget = R.drawable.ic_expense
+                imaget = R.drawable.ic_expense_white
             )
         }
 
@@ -403,7 +403,7 @@ fun CardRowItem(modifier: Modifier, title: String, amount: String, imaget: Int) 
             ExpenseTextView(text = title, style = Typography.bodyLarge, color = Color.White)
         }
         Spacer(modifier = Modifier.size(4.dp))
-        ExpenseTextView(text = amount, style = Typography.titleLarge, color = Color.White)
+        ExpenseTextView(text = amount, style =Typography.titleLarge, color = Color.White)
     }
 }
 

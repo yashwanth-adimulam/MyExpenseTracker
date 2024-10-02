@@ -17,6 +17,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.DatePicker
 import androidx.compose.material3.DatePickerDialog
 import androidx.compose.material3.DropdownMenu
@@ -58,6 +59,7 @@ import com.example.myexpensetracker.base.AddExpenseNavigationEvent
 import com.example.myexpensetracker.base.NavigationEvent
 import com.example.myexpensetracker.utils.Utils
 import com.example.myexpensetracker.data.model.ExpenseEntity
+import com.example.myexpensetracker.ui.theme.ButtonBlue
 import com.example.myexpensetracker.ui.theme.InterFontFamily
 import com.example.myexpensetracker.ui.theme.LightGrey
 import com.example.myexpensetracker.ui.theme.Typography
@@ -99,7 +101,7 @@ fun AddExpense(
                     start.linkTo(parent.start)
                     end.linkTo(parent.end)
                 }) {
-                Image(painter = painterResource(id = R.drawable.ic_back), contentDescription = null,
+                Image(painter = painterResource(id = R.drawable.ic_back_white), contentDescription = null,
                     modifier = Modifier
                         .align(Alignment.CenterStart)
                         .clickable {
@@ -108,14 +110,14 @@ fun AddExpense(
                 ExpenseTextView(
                     text = "Add ${if (isIncome) "Income" else "Expense"}",
                     style = Typography.titleLarge,
-                    color = Color.Black,
+                    color = Color.White,
                     modifier = Modifier
                         .padding(16.dp)
                         .align(Alignment.Center)
                 )
                 Box(modifier = Modifier.align(Alignment.CenterEnd)) {
                     Image(
-                        painter = painterResource(id = R.drawable.dots_menu),
+                        painter = painterResource(id = R.drawable.dots_menu_white),
                         contentDescription = null,
                         modifier = Modifier
                             .align(Alignment.CenterEnd)
@@ -280,12 +282,17 @@ fun DataForm(
                     type.value
                 )
                 onAddExpenseClick(model)
-            }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(8.dp)
+            },
+            modifier = Modifier.fillMaxWidth(),
+            shape = RoundedCornerShape(8.dp),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = ButtonBlue
+            )
         ) {
             ExpenseTextView(
                 text = "Add ${if (isIncome) "Income" else "Expense"}",
                 fontSize = 14.sp,
-                color = Color.Black
+                color = Color.White
             )
         }
     }
@@ -359,7 +366,7 @@ fun ExpenseDropDown(listOfItems: List<String>, onItemSelected: (item: String) ->
                 focusedTextColor = Color.Black,
                 unfocusedTextColor = Color.Black,
 
-            )
+                )
         )
         ExposedDropdownMenu(expanded = expanded.value, onDismissRequest = { }) {
             listOfItems.forEach {
@@ -378,4 +385,3 @@ fun ExpenseDropDown(listOfItems: List<String>, onItemSelected: (item: String) ->
 fun PreviewAddExpense() {
     AddExpense(rememberNavController(), true)
 }
-

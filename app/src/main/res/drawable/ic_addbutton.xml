@@ -11,7 +11,7 @@
 
     <!-- Plus Mark -->
     <path
-        android:strokeColor="#000000"
+        android:strokeColor="#F4F3F3"
         android:strokeWidth="4"
         android:strokeLineCap="round"
         android:pathData="M50 40V60M40 50H60"/>
