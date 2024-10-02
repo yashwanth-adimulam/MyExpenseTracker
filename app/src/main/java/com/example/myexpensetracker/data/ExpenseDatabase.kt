@@ -18,7 +18,7 @@ abstract class ExpenseDatabase : RoomDatabase() {
     abstract fun expenseDao(): ExpenseDao
 
     companion object {
-        const val DATABASE_NAME = "expense_database"
+        const val DATABASE_NAME = "my_expense_database"
 
         @Volatile
         private var INSTANCE: ExpenseDatabase? = null
