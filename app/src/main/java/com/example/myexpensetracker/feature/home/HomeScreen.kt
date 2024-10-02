@@ -208,11 +208,11 @@ fun MultiFloatingActionButton(
                         Column(horizontalAlignment = Alignment.CenterHorizontally) {
                             Icon(
                                 painter = painterResource(R.drawable.ic_expense_white),
-                                contentDescription = "Add Income",
+                                contentDescription = "Add Expense",
                                 tint = Color.White
                             )
                             Text(
-                                text = "Income",
+                                text = "Expense",
                                 style = Typography.bodyMedium,
                                 color = Color.White
                             )
