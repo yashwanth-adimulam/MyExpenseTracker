@@ -2,8 +2,7 @@
 This repo is my attempt to make a fully functional expense tracker app using Kotlin in Android Studio
 
 ## Technologies used
-**Language:** Kotlin
-
+**Language:** Kotlin <br/>
 **Platforms:** 
 - Android Studio Koala version 2024.1.1 Patch 2
 - Gradle version 8.7
