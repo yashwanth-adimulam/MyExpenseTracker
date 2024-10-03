@@ -3,6 +3,7 @@ This repo is my attempt to make a fully functional expense tracker app using Kot
 
 ## Technologies used
 **Language:** Kotlin
+
 **Platforms:** 
 - Android Studio Koala version 2024.1.1 Patch 2
 - Gradle version 8.7
@@ -13,3 +14,4 @@ This repo is my attempt to make a fully functional expense tracker app using Kot
 3. Simple to add incomes and expenses
 4. Stats screen for showing the most spent category
 
+## Have a look
