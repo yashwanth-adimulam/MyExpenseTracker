@@ -17,7 +17,7 @@ This repo is my attempt to make a fully functional expense tracker app using Kot
 ### First Look:
 ![Screenshot 2024-10-02 072210](https://github.com/user-attachments/assets/c09f04e3-0045-4085-bae3-15cef4913777)
 
-### Add Expense or Income:
+### Add Expense or Income Button:
 ![Screenshot 2024-10-02 072227](https://github.com/user-attachments/assets/04c006d4-6e31-4c83-a7a5-0fe2ecaca4dd)
 
 ### Add Income Screen:
